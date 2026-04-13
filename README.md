@@ -10,7 +10,7 @@ When running a query to determine if a principal has access to a certain action/
 user or role could access other users or roles that have access to that action/resource. This catches scenarios such as 
 when a user doesn't have permission to read an S3 object, but could launch an EC2 instance that can read the S3 object.
 
-Additional information can be found in [the project wiki](https://github.com/nccgroup/PMapper/wiki).
+Additional information can be found in [the original project wiki](https://github.com/nccgroup/PMapper/wiki).
 
 # Installation
 
