@@ -20,10 +20,18 @@ Principal Mapper is built using the `botocore` library and Python 3.5+. Principa
 also requires `pydot` (available on `pip`), and `graphviz` (available on Windows, macOS, and Linux from 
 https://graphviz.org/ ).
 
-## Installation from Pip
+## Fork Notes
+
+This is my personal fork of PMapper.
+
+Changes in this fork:
+- Added progress logging during Lambda edge generation
+- Updated for newer versions of Python removing import errors
+
+### Install from this fork
 
 ~~~bash
-[pip install principalmapper](https://github.com/byoung2023/PMapper)
+pip install git+https://github.com/byoung2023/PMapper.git
 ~~~
 
 ## Installation From Source Code
@@ -31,7 +39,7 @@ https://graphviz.org/ ).
 Clone the repository:
 
 ~~~bash
-git clone git@github.com:nccgroup/PMapper.git
+git clone https://github.com/byoung2023/PMapper.git
 ~~~
 
 Then install with Pip:
@@ -40,21 +48,6 @@ Then install with Pip:
 cd PMapper
 pip install .
 ~~~
-
-## Using Docker
-
-_(After cloning from source)_
-
-~~~bash
-cd PMapper
-docker build -t $TAG .
-docker run -it $TAG
-~~~
-
-You can use `-e|--env` or `--env-file` to pass the `AWS_*` environment variables for credentials when calling
-`docker run ...`, or use `-v` to mount your `~/.aws/` directory and use the `AWS_CONFIG_FILE` and `AWS_SHARED_CREDENTIALS_FILE` environment variables.
-The current Dockerfile should put you into a shell with `pmapper -h` ready to go as well as 
-`graphviz` already installed. 
 
 # Usage
 
