@@ -23,7 +23,7 @@ https://graphviz.org/ ).
 ## Installation from Pip
 
 ~~~bash
-pip install principalmapper
+[pip install principalmapper](https://github.com/byoung2023/PMapper)
 ~~~
 
 ## Installation From Source Code
