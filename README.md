@@ -91,11 +91,6 @@ And again when using `--only-privesc`:
 
 ![](examples/example-privesc-only-viz.svg)
 
-# Contributions
-
-100% welcome and appreciated. Please coordinate through [issues](https://github.com/nccgroup/PMapper/issues) before 
-starting and target pull-requests at the current development branch (typically of the form `vX.Y.Z-dev`).
-
 # License
 
     Copyright (c) NCC Group and Erik Steringer 2019. This file is part of Principal Mapper.
